@@ -9,7 +9,7 @@ This software aims to provide a new study environment  where students can engage
 ## Installation Instructions
 clone the EducationOrder repository from the project at :
 [https://github.com/kathy20316/EducationOrder]
-Specifically, go to this repo link, click the green button <Code>, choose "Download zip" to your machine, unzip, and open it with your IDE/code editor.
+Specifically, go to this repo link, click the green button "<>Code", choose "Download zip" to your machine, unzip, and open it with your IDE/code editor.
 
 ## Usage Guide
 run the program in an adequate compiler
