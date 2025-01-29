@@ -8,7 +8,7 @@ This software aims to provide a new study environment  where students can engage
 
 ## Installation Instructions
 clone the EducationOrder repository from the project at :
-[https://github.com/users/kathy20316/projects/2]
+[https://github.com/kathy20316/SoftwareEngineer]
 
 ## Usage Guide
 run the program in an adequate compiler
