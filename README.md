@@ -27,4 +27,4 @@ Set up your profile by entering your name, email, setting your password, and set
 - submit a pull request with description of changes
 
 ## License
-No one outside Team O in OU CS-3113-001 is allowed to modify or distribute this software
+No one outside Team O in OU CS-3203-001 is allowed to modify or distribute this software
