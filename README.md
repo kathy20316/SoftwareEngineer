@@ -10,15 +10,21 @@ This software aims to provide a new study environment  where students can engage
 For Students 🎓​
 
 ✅ Create an Account – Register and select favorite subjects.​
+
 ✅ Browse Educators – View verified tutors and their qualifications.​
+
 ✅ Book Sessions – Schedule 1:1 lessons at a preferred time.​
+
 ✅ Secure Payments – Pay for tutoring sessions seamlessly.​
 
 For Educators 🏫​
 
 ✅ Become a Tutor – Upload degree certification for verification.​
+
 ✅ Set Pricing – Charge per hour (e.g., $7 per hour).​
+
 ✅ Manage Bookings – Accept or decline student requests.​
+
 ✅ Earn Money – Get paid after each session completion.​
 
 Security & Verification 🔐​​
@@ -35,8 +41,7 @@ Security & Verification 🔐​​
 - Deployment: AWS / Firebase​​
 
 ## Installation Instructions
-
-* Prerequisites​​ - Ensure you have the following installed:​​
+Prerequisites​​ - Ensure you have the following installed:​​
 - Node.js (v16+)​​
 - Git​​
 - PostgreSQL (for database)​​
