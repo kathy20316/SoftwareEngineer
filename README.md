@@ -30,7 +30,9 @@ For Educators 🏫​
 Security & Verification 🔐​​
 
 ✅ ID Verification – Tutors must submit valid identification.​​
+
 ✅ Contract Signing – Educators sign a teaching agreement to ensure professionalism.​​
+
 ✅ Payment Protection – Funds are securely held until session completion.​​
 
 🔧 Tech Stack​​
@@ -48,8 +50,7 @@ Prerequisites​​ - Ensure you have the following installed:​​
 - A Package Manager (npm or yarn)​​
 
 **Step 1:** Clone the Repository​​
-git clone https://github.com/kathy20316/EducationOrder 
-cd education-order ​
+git clone https://github.com/kathy20316/EducationOrder
 
 **Step 2:** Install Dependencies ​
 npm instal​
