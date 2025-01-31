@@ -50,17 +50,21 @@ Prerequisites​​ - Ensure you have the following installed:​​
 - A Package Manager (npm or yarn)​​
 
 **Step 1:** Clone the Repository​​
+
 git clone https://github.com/kathy20316/EducationOrder
 
 **Step 2:** Install Dependencies ​
+
 npm instal​
 
 **Step 3:** Set up Environment Variables (Create .install file and configuration)​
+
 DATABASE_URL=your_database_url​
 PORT=5000​
 JWT_SECRET=your_secret_key​
 
 **Step 4:** Run app ​
+
 npm start ​
 
 ## Usage Guide
