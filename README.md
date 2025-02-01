@@ -5,9 +5,10 @@ _this document is not indicative of the final README file. More will be added as
 
 ## Overview
 This software aims to provide a new study environment  where students can engage in one on one conversations with educators. It will cover a wide range of subjects such as Math, English, Spanish, Chinese, and more. The platform provides a secure, flexible, and affordable learning experience while allowing educators to monetize their expertise by offering tutoring services.
+
 🚀 Features​
 
-For Students 🎓​
+🎓​ For Students
 
 ✅ Create an Account – Register and select favorite subjects.​
 
@@ -17,7 +18,7 @@ For Students 🎓​
 
 ✅ Secure Payments – Pay for tutoring sessions seamlessly.​
 
-For Educators 🏫​
+🏫​ For Educators 
 
 ✅ Become a Tutor – Upload degree certification for verification.​
 
@@ -27,7 +28,7 @@ For Educators 🏫​
 
 ✅ Earn Money – Get paid after each session completion.​
 
-Security & Verification 🔐​​
+🔐​​ Security & Verification 
 
 ✅ ID Verification – Tutors must submit valid identification.​​
 
@@ -81,6 +82,14 @@ Set up your profile by entering your name, email, setting your password, and set
 - fork the repository
 - create a new branch for your new feature or bug fix
 - submit a pull request with description of changes
+
+For inquiries or support, reach out to:​
+
+📧 Email: support@educationorder.com​
+
+💻 Website: EducationOrder.com​
+
+🚀 GitHub Repo: Education Order on GitHub​ [https://github.com/kathy20316/EducationOrder]
 
 ## License
 No one outside Team O in OU CS-3203-001 is allowed to modify or distribute this software
