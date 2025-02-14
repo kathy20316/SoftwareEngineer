@@ -37,36 +37,23 @@ This software aims to provide a new study environment  where students can engage
 ✅ Payment Protection – Funds are securely held until session completion.​​
 
 🔧 Tech Stack​​
+- Backend language/ Framework: ​​Python/ Django
 - Frontend: React.js, Tailwind CSS​​
-- Backend: Node.js, Express.js​​
-- Database: PostgreSQL / MongoDB​​
+- Database: MySQL
 - Version Control: Git & GitHub​​
-- Deployment: AWS / Firebase​​
+- Build and Testing: Django Test
+- Deployment: Github Actions
 
 ## Installation Instructions
 Prerequisites​​ - Ensure you have the following installed:​​
-- Node.js (v16+)​​
-- Git​​
-- PostgreSQL (for database)​​
-- A Package Manager (npm or yarn)​​
 
-**Step 1:** Clone the Repository​​
+Python (≥ 3.x) → Download Python [https://www.python.org/downloads/]
 
-git clone https://github.com/kathy20316/EducationOrder
+MySQL → Download MySQL [https://www.mysql.com/downloads/]
 
-**Step 2:** Install Dependencies ​
+Git → Download Git [https://git-scm.com/]
 
-npm instal​
-
-**Step 3:** Set up Environment Variables (Create .install file and configuration)​
-
-DATABASE_URL=your_database_url​
-PORT=5000​
-JWT_SECRET=your_secret_key​
-
-**Step 4:** Run app ​
-
-npm start ​
+Further detailed steps: see installation.md
 
 ## Usage Guide
 run the program in an adequate compiler
