@@ -1,4 +1,6 @@
 
+* GIT
+
 1. git init
 Initializes a new Git repository in the current directory.
 
@@ -70,4 +72,11 @@ Reapplies commits from one branch onto another, useful for keeping a clean histo
 
 20. git remote add origin <repository-url>
 Adds a remote repository (usually for pushing to GitHub, GitLab, etc.).
+
+
+* PYTHON
+python3 --version
+brew info python
+brew install python@3.13
+python3 -m ensurepip
 
