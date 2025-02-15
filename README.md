@@ -45,13 +45,7 @@ This software aims to provide a new study environment  where students can engage
 - Deployment: Github Actions
 
 ## Installation Instructions
-Prerequisites​​ - Ensure you have the following installed:​​
-
-Python (≥ 3.x) → Download Python [https://www.python.org/downloads/]
-
-MySQL → Download MySQL [https://www.mysql.com/downloads/]
-
-Git → Download Git [https://git-scm.com/]
+Prerequisites​​ - Python, MySQL, Git
 
 Further detailed steps: see installation.md
 
