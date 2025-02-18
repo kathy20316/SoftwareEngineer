@@ -43,12 +43,12 @@ nvm use node
 * Create React App:
 In the project directory:
 ```
-npm create vite@latest  # projectName: frontend, framework: React, variant: Typescript + SWC
+npm create vite@latest  # projectName: frontend, framework: React, variant: Javascript + SWC
 cd frontend
 npm install
 npm run dev
 ```
-Using Vite to create a React app, Typescript
+Using Vite to create a React app
 https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o 
 
 4️⃣ Running Tests
