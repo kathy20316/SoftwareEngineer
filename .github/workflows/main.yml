@@ -11,7 +11,10 @@ on:
 jobs:
   backend:
     name: Backend - Django Tests
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
     services:
       mysql:
         image: mysql:8.0
@@ -50,7 +53,10 @@ jobs:
 
   frontend:
     name: Frontend - React Build
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }} # Use the same OS as the backend job
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -75,5 +81,5 @@ jobs:
     needs: [backend, frontend]  # Run only if backend and frontend jobs pass
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Server (Example)
+      - name: Deploy to Server # Will do this later with render.com
         run: echo "Deploying application..." # Replace with actual deployment steps
