@@ -2,8 +2,6 @@ Ensure you have the following installed:​​
 
 * Python (≥ 3.x) → Download Python [https://www.python.org/downloads/]
 
-
-
 * MySQL → Download MySQL [https://www.mysql.com/downloads/] (MySQL tutorial: [https://www.datacamp.com/tutorial/my-sql-tutorial])
 
 * Git → Download Git [https://git-scm.com/]
