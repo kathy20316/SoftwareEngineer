@@ -38,12 +38,11 @@ To run development server:
 
 3️⃣ Set Up Frontend (React)
 
-* Check Node.js version, install or update if it is below v16. [https://nodejs.org/en/download]
+* Install Node.js (Optional): Check Node.js version, install or update if it is below v16. [https://nodejs.org/en/download]
 node -v
-nvm install node
-nvm use node
 npm -v
 npm init (or npm init -y)   # Initialize a New package.json File
+    create index.js file as main entry of package.json
 npm install     # Generate package-lock.json
 
 * Create React App:
