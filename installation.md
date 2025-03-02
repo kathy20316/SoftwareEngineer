@@ -17,8 +17,9 @@ cd EducationOrder
 # Create a virtual environment and install dependencies for the project to separate from system-wide Python installations
 ```
 python3 -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-pip install django
+source venv/bin/activate    # On Windows, use: venv\Scripts\activate, check "which python3" to see if the virtual environment is set up
+                            # Now we can use "python -V" instead of "python3 -V" when we activate the virtual environment
+pip install django          # check with "pip list", "python -m django --version"
 ```
 OR 
 ```
@@ -28,7 +29,11 @@ pip install djangorestframework mysqlclient
 pip freeze > requirements.txt   # Save Dependencies
 deactivate  # when need to deactivate the virtual environment
 ```
-python3 <filename>
+To start Django project:
+    django-admin startproject <project_name>
+
+To run development server:
+    python manage.py runserver
 
 
 3️⃣ Set Up Frontend (React)
