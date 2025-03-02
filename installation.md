@@ -42,6 +42,9 @@ To run development server:
 node -v
 nvm install node
 nvm use node
+npm -v
+npm init (or npm init -y)   # Initialize a New package.json File
+npm install     # Generate package-lock.json
 
 * Create React App:
 In the project directory:
