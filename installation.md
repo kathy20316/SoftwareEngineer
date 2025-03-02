@@ -14,41 +14,53 @@ cd EducationOrder
 
 2️⃣ Set Up Backend (Django)
 
-Create a virtual environment and install dependencies:
+# Create a virtual environment and install dependencies for the project to separate from system-wide Python installations
 ```
-python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-pip install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate    # On Windows, use: venv\Scripts\activate, check "which python3" to see if the virtual environment is set up
+                            # Now we can use "python -V" instead of "python3 -V" when we activate the virtual environment
+pip install django          # check with "pip list", "python -m django --version"
 ```
+OR 
+```
+pip install djangorestframework mysqlclient
+```
+```
+pip freeze > requirements.txt   # Save Dependencies
+deactivate  # when need to deactivate the virtual environment
+```
+To start Django project:
+    django-admin startproject <project_name>
 
-Run database migrations:
-```
-python manage.py migrate
-```
+To run development server:
+    python manage.py runserver
 
-Start the Django development server:
-```
-python manage.py runserver
-```
 
 3️⃣ Set Up Frontend (React)
 
-Navigate to the frontend directory and install dependencies:
+* Install Node.js (Optional): Check Node.js version, install or update if it is below v16. [https://nodejs.org/en/download]
+node -v
+npm -v
+npm init (or npm init -y)   # Initialize a New package.json File
+    create index.js file as main entry of package.json
+npm install     # Generate package-lock.json
+
+* Create React App:
+In the project directory:
 ```
+npm create vite@latest  # projectName: frontend, framework: React, variant: Javascript + SWC
 cd frontend
 npm install
+npm run dev
 ```
-
-Start the React development server:
-```
-npm start
-```
+Using Vite to create a React app
+https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o 
 
 4️⃣ Running Tests
 
 Run Django tests:
 ```
-python manage.py test
+python3 manage.py test
 ```
 
 Run React tests:
