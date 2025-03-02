@@ -80,3 +80,9 @@ brew info python
 brew install python@3.13
 python3 -m ensurepip
 
+
+* Merge git branch with main
+    git checkout main  # Switch to main
+    git pull origin main  # Ensure it's up to date
+    git merge <branch-name>
+    git push origin main

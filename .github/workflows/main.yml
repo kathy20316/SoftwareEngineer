@@ -34,7 +34,18 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.13'
+          python-version: '3.x'
+      
+      - name: Install Docker (macOS only)
+        if: runner.os == 'macOS'
+        run: |
+          brew update
+          brew install --cask docker
+
+      - name: Build and test
+        run: |
+          docker build -t my-app .
+          docker run my-app
 
       - name: Install Dependencies
         run: |
