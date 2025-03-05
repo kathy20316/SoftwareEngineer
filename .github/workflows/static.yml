@@ -47,8 +47,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: frontend-build
-          path: frontend/build
+          name: frontend-dist
+          path: frontend/dist
 
 
       - name: Deploy to GitHub Pages
