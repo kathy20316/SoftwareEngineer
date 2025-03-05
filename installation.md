@@ -1,8 +1,6 @@
-Ensure you have the following installed:​​ 
+* Ensure you have the following installed:​​ 
 
 * Python (≥ 3.x) → Download Python [https://www.python.org/downloads/]
-
-
 
 * MySQL → Download MySQL [https://www.mysql.com/downloads/] (MySQL tutorial: [https://www.datacamp.com/tutorial/my-sql-tutorial])
 
@@ -19,8 +17,9 @@ cd EducationOrder
 # Create a virtual environment and install dependencies for the project to separate from system-wide Python installations
 ```
 python3 -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-pip install django
+source venv/bin/activate    # On Windows, use: venv\Scripts\activate, check "which python3" to see if the virtual environment is set up
+                            # Now we can use "python -V" instead of "python3 -V" when we activate the virtual environment
+pip install django          # check with "pip list", "python -m django --version"
 ```
 OR 
 ```
@@ -30,25 +29,31 @@ pip install djangorestframework mysqlclient
 pip freeze > requirements.txt   # Save Dependencies
 deactivate  # when need to deactivate the virtual environment
 ```
-python3 <filename>
+To start Django project:
+    django-admin startproject <project_name>
+
+To run development server:
+    python manage.py runserver
 
 
 3️⃣ Set Up Frontend (React)
 
-* Check Node.js version, install or update if it is below v16. [https://nodejs.org/en/download]
+* Install Node.js (Optional): Check Node.js version, install or update if it is below v16. [https://nodejs.org/en/download]
 node -v
-nvm install node
-nvm use node
+npm -v
+npm init (or npm init -y)   # Initialize a New package.json File
+    create index.js file as main entry of package.json
+npm install     # Generate package-lock.json
 
 * Create React App:
 In the project directory:
 ```
-npm create vite@latest  # projectName: frontend, framework: React, variant: Typescript + SWC
+npm create vite@latest  # projectName: frontend, framework: React, variant: Javascript + SWC
 cd frontend
 npm install
 npm run dev
 ```
-Using Vite to create a React app, Typescript
+Using Vite to create a React app
 https://dev.to/ag2byte/create-react-app-is-officially-dead-h7o 
 
 4️⃣ Running Tests
