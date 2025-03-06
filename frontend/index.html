@@ -64,6 +64,57 @@
       a:hover {
         text-decoration: underline;
       }
+      
+      /* Chatbot widget styles */
+      #chatbot {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        font-family: Arial, sans-serif;
+        z-index: 1000;
+      }
+      #chatbot-header {
+        background-color: #ff33f6;
+        color: white;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        cursor: pointer;
+        text-align: center;
+      }
+      #chatbot-body {
+        display: none;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        border-radius: 0 0 5px 5px;
+        max-height: 400px;
+        overflow-y: auto;
+      }
+      #chatbot-messages {
+        padding: 10px;
+        height: 250px;
+        overflow-y: auto;
+      }
+      #chatbot-input-container {
+        display: flex;
+        border-top: 1px solid #ccc;
+      }
+      #chatbot-input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        outline: none;
+      }
+      #chatbot-send {
+        padding: 10px;
+        background-color: #ff33f6;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      #chatbot-send:hover {
+        background-color: #e026d2;
+      }
     </style>
   </head>
   <body>
@@ -142,5 +193,52 @@
     <p style="text-align: center; margin-top: 20px; color: #666;">
       <small>Note: This is a static preview. To see the full interactive application, please run the development server.</small>
     </p>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot">
+      <div id="chatbot-header">Chat with us!</div>
+      <div id="chatbot-body">
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input-container">
+          <input type="text" id="chatbot-input" placeholder="Type your question..." />
+          <button id="chatbot-send">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Toggle chatbot window
+      document.getElementById('chatbot-header').addEventListener('click', function() {
+        var chatbotBody = document.getElementById('chatbot-body');
+        chatbotBody.style.display = (chatbotBody.style.display === 'none' || chatbotBody.style.display === '') ? 'block' : 'none';
+      });
+
+      // Simple simulated chatbot response for demonstration purposes
+      document.getElementById('chatbot-send').addEventListener('click', function() {
+        var inputField = document.getElementById('chatbot-input');
+        var userInput = inputField.value.trim();
+        if(userInput !== "") {
+          var messagesDiv = document.getElementById('chatbot-messages');
+
+          // Append user message
+          var userMessage = document.createElement('div');
+          userMessage.style.textAlign = 'right';
+          userMessage.style.margin = '5px';
+          userMessage.innerHTML = '<strong>You:</strong> ' + userInput;
+          messagesDiv.appendChild(userMessage);
+
+          // Simulated bot response
+          var botMessage = document.createElement('div');
+          botMessage.style.textAlign = 'left';
+          botMessage.style.margin = '5px';
+          botMessage.innerHTML = '<strong>Bot:</strong> Thanks for your question! We will get back to you shortly.';
+          messagesDiv.appendChild(botMessage);
+
+          // Clear input field and scroll to the bottom
+          inputField.value = '';
+          messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+      });
+    </script>
   </body>
 </html>
