@@ -86,3 +86,20 @@ python3 -m ensurepip
     git pull origin main  # Ensure it's up to date
     git merge <branch-name>
     git push origin main
+
+* keep your changes, commit them before rebasing
+    git add .
+    git commit -m "commit message"
+    git pull --rebase origin main
+    git push origin main
+
+* Rebase
+    git checkout <branch-name>
+    git rebase main     # updates your current branch with the latest changes from the main branch
+    git push origin <branch-name>
+
+* Discard Changes as you don't want to keep them
+    git reset --hard
+    git rebase origin/main
+
+
