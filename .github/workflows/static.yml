@@ -1,5 +1,5 @@
 # Workflow to deploy React App from 'frontend/' folder to GitHub Pages
-name: Deploy React App to GitHub Pages
+name: CD/ Deploy React App to GitHub Pages
 
 on:
   push:
